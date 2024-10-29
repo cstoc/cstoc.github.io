@@ -4,14 +4,14 @@ function Header() {
   return (
     <header className="bg-[#fffaf2] shadow-md p-6">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="w-16 h-16 bg-gray-300 rounded-full">
-          {/* Left image placeholder */}
+        <div className="w-32 h-32 bg-gray-300 rounded-full overflow-hidden">
+          <img src="logo.png" alt="Logo" className="w-full h-full object-cover" />
         </div>
         <h1 className="text-4xl font-bold text-center font-serif bg-gradient-to-r from-[#228B22] to-[#d4814d] text-transparent bg-clip-text">
           Cura Connections
         </h1>
-        <div className="w-16 h-16 bg-gray-300 rounded-full">
-          {/* Right image placeholder */}
+        <div className="w-32 h-32 bg-gray-300 rounded-full overflow-hidden">
+          <img src="logo.png" alt="Logo" className="w-full h-full object-cover" />
         </div>
       </div>
     </header>
@@ -78,7 +78,7 @@ function TabContent({ activeTab }) {
   switch (activeTab) {
     case "Home":
       return (
-        <div className={`p-8 ${bgClass} max-w-4xl mx-auto`}>
+        <div className={`p-8 ${bgClass} max-w-2xl mx-auto`}>
           <h2 className="text-4xl font-semibold mb-6 text-[#228B22]">Welcome to Cura Connections</h2>
           <p className="text-xl text-[#672e33] mb-8">
             Your trusted partner in healing, connecting you with free and affordable healthcare options.
@@ -126,7 +126,7 @@ function TabContent({ activeTab }) {
       );
     case "Learning Hub":
       return (
-        <div className={`p-4 ${bgClass} max-w-4xl mx-auto`}>
+        <div className={`p-4 ${bgClass} max-w-2xl mx-auto`}>
           <h2 className="text-2xl font-semibold mb-4 text-[#228B22]">Learning Hub</h2>
           <p className="text-[#672e33] mb-6">
             Welcome to our Learning Hub. Here you'll find resources, articles,
@@ -160,7 +160,7 @@ function TabContent({ activeTab }) {
       );
     case "About Us":
       return (
-        <div className={`p-4 ${bgClass} max-w-4xl mx-auto`}>
+        <div className={`p-4 ${bgClass} max-w-2xl mx-auto`}>
           <h2 className="text-2xl font-semibold mb-4 text-[#228B22]">About Us</h2>
           <p className="text-[#672e33]">
             Cura Connections is dedicated to connecting patients with the right healthcare providers and answering any questions about the healthcare system our patients may have.
@@ -173,7 +173,7 @@ function TabContent({ activeTab }) {
       );
     case "FAQ":
       return (
-        <div className={`p-4 ${bgClass} max-w-4xl mx-auto`}>
+        <div className={`p-4 ${bgClass} max-w-2xl mx-auto`}>
           <h2 className="text-2xl font-semibold mb-4 text-[#228B22]">
             Frequently Asked Questions
           </h2>
