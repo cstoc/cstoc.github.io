@@ -19,7 +19,7 @@ function Header() {
 }
 
 function Navigation({ activeTab, setActiveTab }) {
-  const tabs = ["Home", "Make an Appointment", "Learning Hub", "About Us", "FAQ"];
+  const tabs = ["Home", "Make an Appointment", "About Us", "FAQ"];
   return (
     <nav className="bg-[#fffaf2] p-4 border-b border-[#228B22]/20">
       <ul className="flex flex-wrap justify-center space-x-4">
